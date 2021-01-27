@@ -1,0 +1,28 @@
+package pack1;
+
+import java.text.DecimalFormat;
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class CustosVariaveis {
+	private int valor;
+	
+	private static final String UNIDADE_MONETARIA = ("R$");
+	private static final DecimalFormat FORMATO = new DecimalFormat(UNIDADE_MONETARIA + " #,###,##0.00");
+	private LocalDate dataValidadeDoBoleto;
+	private final LocalTime horarioValidadeDoBoleto;
+	
+	public CustosVariaveis (int valor, int diaDeValidade, int mesValidade, int anoValidade) {
+		this.valor = valor;
+		dataValidadeDoBoleto = LocalDate.of(anoValidade,mesValidade,diaDeValidade);
+		horarioValidadeDoBoleto = LocalTime.of(12, 00);
+	}
+	
+	public int getValor() {
+		return valor;
+	}
+	
+	public int consultarValorFixo(CustosFixosMensais tipo) {
+		return tipo.getValor();
+	}
+}

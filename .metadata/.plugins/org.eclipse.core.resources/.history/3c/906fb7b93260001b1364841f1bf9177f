@@ -1,0 +1,12 @@
+package pack1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CustosVariaveis mes1 = new CustosVariaveis(200, 10, 12, 2021);
+		System.out.println(mes1.getValor());
+		System.out.println(mes1.consultarValorFixo(CustosFixosMensais.AGUA));
+	}
+
+}

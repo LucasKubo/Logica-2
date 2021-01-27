@@ -1,0 +1,36 @@
+package pack1;
+
+import java.text.DecimalFormat;
+import java.time.LocalDateTime;
+
+public class CustosVariaveis {
+	private int mercado;
+	private int açougue;
+	private int feira;
+	private static final String UNIDADE_MONETARIA = ("R$");
+	private static final String FORMATO = new DecimalFormat();
+	private LocalDateTime validadeDoBoleto;
+	
+	public CustosVariaveis (int mercado, int açougue, int feira) {
+		this.mercado = mercado;
+		this.açougue = açougue;
+		this.feira = feira;
+		validadeDoBoleto = LocalDateTime.of(2021,02,7,12,00);
+	}
+	
+	
+	
+	public CustosVariaveis(int mercado, int açougue, int feira, LocalDateTime validadeDoBoleto) {
+		this.mercado = mercado;
+		this.açougue = açougue;
+		this.feira = feira;
+		this.validadeDoBoleto = validadeDoBoleto;
+	}
+
+
+
+	public DoublesomaValores () {
+		
+	}
+	
+}

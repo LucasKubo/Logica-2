@@ -1,0 +1,11 @@
+package pack1;
+
+public enum CustosFixosMensais {
+	AGUA(1),LUZ(2),INTERNET(3),GAS(4);
+	
+	private int id;
+	
+	CustosFixosMensais(int id) {
+		this.id=id;
+	}
+}

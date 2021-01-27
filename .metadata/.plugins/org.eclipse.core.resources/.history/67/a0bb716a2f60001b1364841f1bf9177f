@@ -1,0 +1,15 @@
+package pack1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CustosVariaveis mes1 = new CustosVariaveis(10, 20, 30, 7, 2, 2021);
+		ContaBancaria cliente1 = new ContaBancaria("Lucas", 1200);
+		System.out.println(cliente1.getSaldo());
+		System.out.println(mes1.total());
+		System.out.println(mes1.getValidadeDoBoleto());
+		System.out.println(mes1.consultarValor(CustosFixosMensais.AGUA));
+	}
+
+}
