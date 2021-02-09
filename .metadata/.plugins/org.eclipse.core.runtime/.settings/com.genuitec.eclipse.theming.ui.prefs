@@ -1,10 +1,13 @@
-applyBackground=false
+PEFontSize=30
+applyBackground=true
 approved.defs.file.last.changed.time=1607625304000
 configurationInstallLocation=/C\:/Users/lucas/eclipse/jee-2020-12/eclipse/
 eclipse.preferences.version=1
 elearning.dont.show.until=1612730850991
 iconcolormode=primary
-last.download.attempt.time=1611694055372
-lastConfiguration=1611708026820
+includeThemingInOomph=false
+last.download.attempt.time=1612841217410
+lastConfiguration=1612899666719
 newinstall=true
+overridePEFontSize=false
 workbench.theme=Dark Gray
